@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- You should probably let Roomservice deal with this unless you know what you are doing. -->
+<manifest>
+
+  <!-- libra -->
+  <project name="aospa-libra/android_device_xiaomi_libra" path="device/xiaomi/libra" remote="github" revision="nougat-mr2" />
+  <project name="aospa-libra/android_vendor_xiaomi" path="vendor/xiaomi" remote="github" revision="nougat-mr2" />
+  <project name="aospa-libra/android_kernel_xiaomi_msm8992" path="kernel/xiaomi/msm8992" remote="github" revision="nougat-mr2" />
+
+  <!-- hardware -->
+  <project name="AOSPA/android_hardware_qcom_audio" path="hardware/qcom/audio" remote="github" revision="nougat-mr2-8994" />
+  <project name="AOSPA/android_hardware_qcom_display" path="hardware/qcom/display" remote="github" revision="nougat-mr2-8994" />
+  <project name="AOSPA/android_hardware_qcom_media" path="hardware/qcom/media" remote="github" revision="nougat-mr2-8994" />
+
+  <!-- packages -->
+  <remove-project name="platform/packages/apps/Gallery2" />
+  <project name="LineageOS/android_packages_apps_Gallery2" path="packages/apps/Gallery2" remote="github" revision="cm-14.1" />
+  <project name="LineageOS/android_packages_apps_Jelly" path="packages/apps/Gallery2" remote="github" revision="cm-14.1" />
+
+  <!-- vendor -->
+  <remove-project name="vendor/pa" />
+  <project name="aospa-libra/android_vendor_pa" path="vendor/pa" remote="github" revision="nougat-mr2" >
+    <copyfile src="build.sh" dest="rom-build.sh" />
+  </project>
+  <project name="aospa-libra/android_vendor_kenga" path="vendor/kenga" remote="github" revision="nougat-mr2" />
+
+</manifest>

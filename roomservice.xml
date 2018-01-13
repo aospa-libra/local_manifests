@@ -3,16 +3,13 @@
 <manifest>
 
   <!-- libra -->
-  <project name="aospa-libra/android_device_xiaomi_libra" path="device/xiaomi/libra" remote="github" revision="nougat-mr2" />
-  <project name="aospa-libra/android_vendor_xiaomi" path="vendor/xiaomi" remote="github" revision="nougat-mr2" />
-  <project name="aospa-libra/android_kernel_xiaomi_msm8992" path="kernel/xiaomi/msm8992" remote="github" revision="nougat-mr2" />
+  <project path="device/xiaomi/libra" name="aospa-libra/platform_device_xiaomi_libra" remote="github" revision="nougat-mr2" />
+  <project path="vendor/xiaomi" name="aospa-libra/proprietary_vendor_xiaomi" remote="github" revision="nougat-mr2" />
+  <project path="kernel/xiaomi/msm8992" name="aospa-libra/platform_kernel_xiaomi_msm8992" remote="github" revision="nougat-mr2" />
 
-  <!-- hardware -->
-  <project name="AOSPA/android_hardware_qcom_audio" path="hardware/qcom/audio" remote="github" revision="nougat-mr2-8994" />
-  <project name="AOSPA/android_hardware_qcom_display" path="hardware/qcom/display" remote="github" revision="nougat-mr2-8994" />
-  <project name="AOSPA/android_hardware_qcom_media" path="hardware/qcom/media" remote="github" revision="nougat-mr2-8994" />
+  <project path="external/ant-wireless/antradio-library" name="LineageOS/android_external_ant-wireless_antradio-library" remote="github" revision="cm-14.1" />
 
-  <!-- vendor -->
-  <project name="aospa-libra/android_vendor_kenga" path="vendor/kenga" remote="github" revision="nougat-mr2" />
+  <!-- custom vendor -->
+  <project path="vendor/kenga" name="aospa-libra/android_vendor_kenga" remote="github" revision="nougat-mr2" />
 
 </manifest>
